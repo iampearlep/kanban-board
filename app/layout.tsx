@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
 
+
+const source = Source_Serif_4({ subsets: ["latin"] });
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,9 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+       className={source.className}
       >
-        {children}
+        <div className="h-screen w-full md:flex">
+          <div className="hidden md:block">
+            <Sidebar />
+          </div>
+          <main className="md:w-1/2 md:ml-72">{children}</main>
+        </div>
       </body>
     </html>
   );

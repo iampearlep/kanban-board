@@ -2,8 +2,8 @@
 
 export default function Home() {
   return (
-   <main>
-    <h1>Kanban Board</h1>
+   <main className="py-6 px-3">
+    Kanban Board
    </main>
   );
 }
