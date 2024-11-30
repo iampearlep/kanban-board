@@ -36,7 +36,7 @@ export default function RootLayout({
           <div className="hidden md:block">
             <Sidebar />
           </div>
-          <main className="md:w-1/2 md:ml-72">{children}</main>
+          <main className="flex-1 md:ml-64">{children}</main>
         </div>
       </body>
     </html>
