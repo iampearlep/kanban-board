@@ -1,9 +1,12 @@
+import Header from "@/components/Header";
+import Tab from "@/components/Tab";
 
 
 export default function Home() {
   return (
-   <main className="py-6 px-3">
-    Kanban Board
+   <main className="">
+    <Header />
+    <Tab />
    </main>
   );
 }
