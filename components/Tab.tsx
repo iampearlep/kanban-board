@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FilterIcon, GroupIcon, SortDescIcon } from "lucide-react";
+import Board from "./Board";
 
 const Tab = () => {
   const [activeTab, setActiveTab] = useState("board");
@@ -14,22 +15,22 @@ const Tab = () => {
     {
       id: "board",
       label: "Board",
-      component: "Hello",
+      component: <Board />,
     },
     {
         id: "list",
         label: "List",
-        component: "Hello",
+        component: "List",
       },
       {
         id: "table",
         label: "Table",
-        component: "Hello",
+        component: "Table",
       },
       {
         id: "timeline",
         label: "Timeline",
-        component: "Hello",
+        component: "Timeline",
       },
   ];
   return (

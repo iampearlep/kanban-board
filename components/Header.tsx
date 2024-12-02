@@ -1,5 +1,3 @@
-import Image from "next/image"
-import FileIcon from "@/public/file-download-02.svg"
 import { PlusIcon } from "lucide-react"
 const Header = () => {
   return (
