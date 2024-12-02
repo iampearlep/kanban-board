@@ -3,7 +3,7 @@ import Columns from './Columns'
 
 const Board = () => {
   return (
-    <div>
+    <div className='w-full'>
       <Columns />
     </div>
   )

@@ -21,7 +21,7 @@ const columnData = [
 ]
 const Columns = () => {
   return (
-    <div className='flex flex-col md:grid md:grid-cols-3 py-10 gap-6 lg:gap-8'>
+    <div className='flex flex-col md:grid md:grid-cols-3 py-8 gap-6 lg:gap-8'>
     {columnData.map((column) => (
       <Column key={column.id} {...column} />
     ))}

@@ -58,7 +58,7 @@ const Column = ({ title, status }: { title: string; status: string }) => {
         ></span>
         <h2>{title}</h2>
       </div>
-      <div className="mt-2 h-full w-full flex-1 rounded-xl px-3">
+      <div className="my-3 h-full w-full flex-1 rounded-xl px-3">
         <div className="flex flex-col gap-4 ">
           {filteredTasks.map((task) => (
             <Task key={task.id} {...task} />
