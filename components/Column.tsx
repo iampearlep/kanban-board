@@ -13,6 +13,7 @@ const Column = ({ title, status }: { title: string; status: Status }) => {
   const handleDrop = (e:React.DragEvent<HTMLDivElement>) => {
     if (!draggedTask) return;
     updateTask(draggedTask, status)
+    dragTask(null)
   }
 
   useEffect(() => {
