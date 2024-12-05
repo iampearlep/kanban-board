@@ -1,7 +1,13 @@
 import React from 'react'
 import Column from './Column'
+import { Status } from '@/lib/store'
 
-const columnData = [
+type ColumnDataType = {
+  id: string,
+  title: string,
+  status: Status
+}
+const columnData :ColumnDataType[]  = [
 
   {
     id: '0',
